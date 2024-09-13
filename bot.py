@@ -7,7 +7,7 @@ intents.message_content = True
 intents.reactions = True
 
 bot = commands.Bot(command_prefix='!', intents=intents)
-
+# set discord channel ID
 target_channel_ids = [1284150779279577088, 911465862291148844, ]  
 
 @bot.event
@@ -40,5 +40,5 @@ async def on_reaction_add(reaction, user):
                 print(f'Deleted message from {message.author.name}')
             except discord.Forbidden:
                 print(f"Couldn't delete message from {message.author.name}")
-
-bot.run('MTI4NDE1NTg0MDg0NDI3MTY5Nw.GQgd8m.4hZEew8xBWFSDkcOlRKa0VW-f6Khgr2w_odytU')
+#set bot token
+bot.run('')
