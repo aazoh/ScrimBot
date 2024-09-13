@@ -8,7 +8,7 @@ intents.reactions = True
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 # set discord channel ID
-target_channel_ids = [1284150779279577088, 911465862291148844, ]  
+target_channel_ids = [, ]  
 
 @bot.event
 async def on_ready():
